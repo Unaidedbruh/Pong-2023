@@ -36,7 +36,7 @@ public class BallSpawner : MonoBehaviour
         //Spawns the ball based on prefab
         currentBall = Instantiate(ballPrefab, spawnPosition.position, transform.rotation, null);
 
-        float ranX = Random.Range(-1.5f, 1.5f);
+        int ranX = Random.Range(0, 2) * 2 - 1;
         float ranY = Random.Range(-1.5f, 1.5f);
         Vector3 newDirection = new Vector3(ranX, ranY, 0);
 
